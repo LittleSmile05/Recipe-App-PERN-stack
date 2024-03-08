@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); 
+.recipe{ 
+	border-radius: 10px; 
+	margin: 18px; 
+    gap: 10px;
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center; 
+	width: 350px;
+    height:auto;
+    font-size: 10px;
+    padding: 20px;
+    border: 1px rgb(196, 194, 194) solid;
+    width: auto;
+    transition: 0.5s ease;
+	
+} 
+.recipe:hover{
+    box-shadow: 0px 5px 20px rgb(63, 60, 60); 
+}
+
+.expanded {
+    height: 550px; 
+}
+
+h1{
+    text-align: center;
+}
+button{
+    background: #5dd25d; 
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    color: white; 
+    font-size: larger; 
+    margin: 0 0 0 10px; 
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background: #51be51; 
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(29, 87, 28, 0.5), 0 6px 20px 0  rgba(32, 126, 30, 0.5);
+}
+.image{ 
+	border-radius: 10px; 
+    margin-top: 20px;
+    height: 200px; 
+	width: 350px;
+	margin:0px 0px 20px 0px; 
+} 
+.btn{
+    border: none;
+    background-color: white;
+    box-shadow: none;
+    margin-top: 20px;
+}
+/* recipe.module.css */
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    box-shadow: none; /* Add hover effect */
+    
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    animation: pulse 0.5s infinite; /* Apply the pulse animation */
+    background-color: transparent;
+    box-shadow: none; /* Add hover effect */
+}
